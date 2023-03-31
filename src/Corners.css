@@ -9,8 +9,8 @@
   
   .corner-frame {
     position: absolute;
-    width: 45vw; /* Adjust the width and height according to your image size */
-    height: 45vw;
+    width: 50%; /* Adjust the width and height according to your image size */
+    height: auto;
     filter: invert(1);
     padding: 2px;
   }
