@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <HashRouter>
-      <Container>
+      <Container fluid>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
