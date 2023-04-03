@@ -2,10 +2,12 @@ import CornerFrames from "./Corners";
 import ornateCornerFrame from "../assets/ornate-corner-frame.png";
 import bgCircle from "../assets/bg-star-circle.png";
 import { Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const cornerFrameAlt =
     "Decorative Corner Vintage Ornament and Frame from Healltica on Canva";
+  const navigate = useNavigate();
   return (
     <div>
   <div className="bg-circle-container">
@@ -29,15 +31,14 @@ function Home() {
         <p className="pirata home-sub-hero">Your next developer.</p>
       </div>
       <Row className="pirata text-center links">
-        <Col xs={12} md={4} className="link-container">
-        
-          <a href="/works">Works</a>
+        <Col xs={12} md={4} className="link-container" onClick={() => navigate("/works")}>
+            Works
         </Col>
-        <Col xs={12} md={4} className="link-container">
-          <a href="/about">About</a>
+        <Col xs={12} md={4} className="link-container"  onClick={() => navigate("/about")}>
+          About
         </Col>
-        <Col xs={12} md={4} className="link-container">
-          <a href="/contact">Contact</a>
+        <Col xs={12} md={4} className="link-container"  onClick={() => navigate("/contact")}>
+          Contact
         </Col>
       </Row>
     </div>

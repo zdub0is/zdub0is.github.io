@@ -85,9 +85,7 @@ a, a:hover, a:visited, a:active {
   flex-direction: column;
 }
 
-.links:hover {
-  opacity: 0.5;
-}
+
 
 .link-container {
   display: flex;
@@ -106,7 +104,9 @@ a, a:hover, a:visited, a:active {
   margin: 0 0;
 }
 
-
+.link-container:hover {
+  opacity: 0.5;
+}
 
 
 
