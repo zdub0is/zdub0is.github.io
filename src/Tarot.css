@@ -1,23 +1,109 @@
+.carousel-container {
+  width: 50vw;
+  height: 100%;
+}
+
+
+.swiper-cards {
+  overflow: hidden;
+  
+}
+.swiper-wrapper {
+  margin-top: 0.5rem;
+}
+
 .tarot-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+  perspective: 1000px;
+  width: 20vw;
+  height: calc(20vw * 1.78082191781);
+  margin: 0 auto;
+  font-family: 'Alice', serif;
+} 
+
+.tarot-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.tarot-card:hover .tarot-card-inner {
+  transform: rotateY(180deg);
+}
+
+.tarot-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.tarot-card-back {
+  background-image: url("./assets/cardBack.png");;
+  background-size: cover;
+  background-position: center;
+}
+
+.tarot-card-front {
   
-  .card-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.tarot-card-front img {
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    width: 100vw;
   }
-  
-  .card-content {
-    font-size: 16px;
+  .swiper-wrapper {
+    margin-top: 4rem;
   }
-  
+  .tarot-card {
+    width: 55vw;
+    height: calc(55vw * 1.78082191781);
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .carousel-container {
+    width: 100vw;
+  }
+  .swiper-wrapper {
+    margin-top: 3rem;
+  }
+  .tarot-card {
+    width: 40vw;
+    height: calc(40vw * 1.78082191781);
+  }
+
+}
+
+/* background-image: url("./assets/cardBack.png"); */
+/* background-image: url("./assets/cardFront.png"); */
+
+/* width: 36.5vh;
+  height: 65vh; 
+  1.78082191781*/
+
+/* .tarot-card {
+  perspective: 1000px;
+  width: 36.5vh;
+  height: 65vh;
+  font-family: 'Alice', serif;
+} */

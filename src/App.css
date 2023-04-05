@@ -108,7 +108,18 @@ a, a:hover, a:visited, a:active {
   opacity: 0.5;
 }
 
+.tarot-container {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
 
+.sub-page-hero {
+  font-size: 7rem;
+  text-align: center;
+  line-height: 90%;
+  margin: 1.25rem;
+}
 
 
 /* Creating the background circle animation*/
@@ -175,6 +186,12 @@ a, a:hover, a:visited, a:active {
     width: calc(1em + 15rem);
     height: calc(1em + 6.5rem);
   }
+  .sub-page-hero {
+    font-size: 8rem;
+    text-align: left;
+    line-height: 90%;
+    margin: 2rem;
+  }
 
   
 }
@@ -224,6 +241,11 @@ a, a:hover, a:visited, a:active {
     z-index: -1;
     animation: rotate 60s linear infinite;
   }
-  
+  .sub-page-hero {
+    text-align: left;
+    font-size: 10rem;
+    line-height: 90%;
+    margin: 1.5rem;
+  }
 }
   
