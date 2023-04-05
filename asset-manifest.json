@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ff9c2d5.css",
-    "main.js": "/static/js/main.aa436bdf.js",
+    "main.css": "/static/css/main.1322a8b3.css",
+    "main.js": "/static/js/main.39891205.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/xivprofit-thumb.png": "/static/media/xivprofit-thumb.e1170e036489efbec930.png",
+    "static/media/zdubois-thumb.png": "/static/media/zdubois-thumb.e039bede85a910465df6.png",
+    "static/media/coming-soon-thumb.png": "/static/media/coming-soon-thumb.665dc8e23054d21a27ef.png",
+    "static/media/cardBack.png": "/static/media/cardBack.9c897f3bae87449cc2c9.png",
     "static/media/bg-star-circle.png": "/static/media/bg-star-circle.21e52c158c9e5a194e44.png",
     "static/media/star-oval-button.png": "/static/media/star-oval-button.63c0c131b29d0ceb5ae5.png",
     "static/media/ornate-corner-frame.png": "/static/media/ornate-corner-frame.f8205838f74d817e9e42.png",
     "index.html": "/index.html",
-    "main.6ff9c2d5.css.map": "/static/css/main.6ff9c2d5.css.map",
-    "main.aa436bdf.js.map": "/static/js/main.aa436bdf.js.map",
+    "main.1322a8b3.css.map": "/static/css/main.1322a8b3.css.map",
+    "main.39891205.js.map": "/static/js/main.39891205.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ff9c2d5.css",
-    "static/js/main.aa436bdf.js"
+    "static/css/main.1322a8b3.css",
+    "static/js/main.39891205.js"
   ]
 }
