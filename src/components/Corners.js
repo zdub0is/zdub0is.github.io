@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Corners.css';
+import '../assets/css/Corners.css';
 
 const CornerFrames = ({ imageUrl, alt, corners }) => (
   <div className="corner-frame-container">

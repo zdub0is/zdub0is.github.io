@@ -5,15 +5,15 @@ import { EffectCards, Mousewheel } from "swiper";
 import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import ".././Tarot.css";
-import ffxivProfitThumb from "../assets/xivprofit-thumb.png";
-import zduboisThumb from "../assets/zdubois-thumb.png";
-import comingSoonThumb from "../assets/coming-soon-thumb.png";
+import "../assets/css/Tarot.css";
+import ffxivProfitThumb from "../assets/img/xivprofit-thumb.png";
+import zduboisThumb from "../assets/img/zdubois-thumb.png";
+import comingSoonThumb from "../assets/img/coming-soon-thumb.png";
 
 const TarotCarousel = () => {
   const navigate = useNavigate();
   const tarotData = [
-    { id: 1, text: "FFXIV Profit", path: "/works/ffxivprofit", img: ffxivProfitThumb },
+    { id: 1, text: "FFXIV Profit", path: "/works/ffxiv-profit", img: ffxivProfitThumb },
     { id: 2, text: "zdubois.com", path: "/works/zdubois", img: zduboisThumb },
     { id: 3, text: "Coming Soon..." },
   ];

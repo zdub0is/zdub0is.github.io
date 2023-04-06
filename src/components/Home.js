@@ -1,6 +1,6 @@
 import CornerFrames from "./Corners";
-import ornateCornerFrame from "../assets/ornate-corner-frame.png";
-import bgCircle from "../assets/bg-star-circle.png";
+import ornateCornerFrame from "../assets/img/ornate-corner-frame.png";
+import bgCircle from "../assets/img/bg-star-circle.png";
 import { Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 

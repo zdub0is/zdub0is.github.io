@@ -42,7 +42,7 @@
 }
 
 .tarot-card-back {
-  background-image: url("./assets/cardBack.png");;
+  background-image: url("../img/cardBack.png");;
   background-size: cover;
   background-position: center;
 }

@@ -35,6 +35,9 @@ a, a:hover, a:visited, a:active {
 .pirata {
   font-family: 'Pirata One', cursive;
 }
+.alice {
+  font-family: 'Alice', serif;
+}
 .text-container {
   position: relative;
   z-index: 1;
@@ -92,7 +95,7 @@ a, a:hover, a:visited, a:active {
 
   justify-content: center;
   align-items: center;
-  background-image: url('./assets/star-oval-button.png'); /* Replace with your oval image path */
+  background-image: url('../img/star-oval-button.png'); /* Replace with your oval image path */
   background-repeat: no-repeat;
   background-size: cover;
   width: calc(1em + 9rem); /* Adjust the width based on font size */

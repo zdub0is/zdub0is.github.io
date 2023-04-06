@@ -1,0 +1,10 @@
+.works-title {
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+}
+.works-body {
+    font-size: 2em;
+    text-align: left;
+    width: 75%;
+}
