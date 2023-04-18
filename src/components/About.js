@@ -2,8 +2,9 @@ import Corners from "./Corners";
 import '../assets/css/About.css';
 import cornerFrame from '../assets/img/corner-frame.png';
 import ToHomeArrow from "./ToHomeArrow";
+import { useNavigate } from "react-router-dom";
 function About() {
-
+  const navigate = useNavigate();
   return (
     <>
     
@@ -30,11 +31,11 @@ function About() {
       <h2>Skills:</h2>
       <p>JavaScript ⋅ Python ⋅ Customer Service ⋅ Microsoft Office Suite ⋅ Google Suite ⋅ Illustration ⋅ Databases ⋅ Backend Development ⋅ Frontend Development ⋅ Version Control ⋅ Data Analysis</p>
       <br />
-      <div className="about-button">My Resume</div>
+      <div className="about-button">Coming Soon...</div>
       <br />
       <p>My hands-on experience and passion for problem-solving make me a valuable asset in the ever-evolving world of technology. If you'd like to connect, discuss potential collaboration, or explore my work further, please feel free to reach out. I look forward to connecting with you!</p>
       <br />
-      <div className="about-button">Contact</div>
+      <div className="about-button" onClick={() => navigate("/contact")}>Contact</div>
       </div>
     </>
   );

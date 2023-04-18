@@ -7,13 +7,13 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "../assets/css/Tarot.css";
 import ffxivProfitThumb from "../assets/img/xivprofit-thumb.png";
-import zduboisThumb from "../assets/img/zdubois-thumb.png";
+import xivpipyThumb from "../assets/img/xivprofit-python-thumb.png";
 import comingSoonThumb from "../assets/img/coming-soon-thumb.png";
 
 const TarotCarousel = () => {
   const tarotData = [
     { id: 1, text: "FFXIV Profit", path: "https://zdub0is.github.io/xivprofit/", img: ffxivProfitThumb },
-    { id: 2, text: "zdubois.com", path: "https://zdub0is.github.io/", img: zduboisThumb },
+    { id: 2, text: "FFXIV Profit Backend", path: "https://github.com/zdub0is/XIVpipy", img: xivpipyThumb },
     { id: 3, text: "Coming Soon..." },
   ];
   const handleNavigation = (path) => {
@@ -31,6 +31,7 @@ const TarotCarousel = () => {
           <div className="tarot-card-inner">
             <div className="tarot-card-face tarot-card-back"></div>
             <Card
+              aria-label={item.text}
               className="tarot-card-face tarot-card-front"
               onClick={() => handleNavigation(item.path)}
               style= {item.img ? {backgroundImage: `url(${item.img})`} : {backgroundImage: `url(${comingSoonThumb})`}}
