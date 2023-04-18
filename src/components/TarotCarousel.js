@@ -11,13 +11,19 @@ import zduboisThumb from "../assets/img/zdubois-thumb.png";
 import comingSoonThumb from "../assets/img/coming-soon-thumb.png";
 
 const TarotCarousel = () => {
-  const navigate = useNavigate();
   const tarotData = [
-    { id: 1, text: "FFXIV Profit", path: "/works/ffxiv-profit", img: ffxivProfitThumb },
-    { id: 2, text: "zdubois.com", path: "/works/zdubois", img: zduboisThumb },
+    { id: 1, text: "FFXIV Profit", path: "https://zdub0is.github.io/xivprofit/", img: ffxivProfitThumb },
+    { id: 2, text: "zdubois.com", path: "https://zdub0is.github.io/", img: zduboisThumb },
     { id: 3, text: "Coming Soon..." },
   ];
-
+  const handleNavigation = (path) => {
+    if (path) {
+      const newWindow = window.open();
+      newWindow.opener = null;
+      newWindow.location.href = path;
+      newWindow.target = '_blank';
+    }
+  }
   const renderItem = (item) => {
     return (
       <div key={item.id} className="tarot-card-wrapper">
@@ -26,9 +32,10 @@ const TarotCarousel = () => {
             <div className="tarot-card-face tarot-card-back"></div>
             <Card
               className="tarot-card-face tarot-card-front"
-              onClick={() => (item.path ? navigate(item.path) : null)}
+              onClick={() => handleNavigation(item.path)}
               style= {item.img ? {backgroundImage: `url(${item.img})`} : {backgroundImage: `url(${comingSoonThumb})`}}
             >
+            
             </Card>
           </div>
         </div>

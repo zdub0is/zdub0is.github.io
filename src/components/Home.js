@@ -25,7 +25,7 @@ function Home() {
       <div className="hero-row">
         <p className="pirata home-hero">
           Zeke
-          <br class="d-md-none" /> Du Bois
+          <br className="d-md-none" /> Du Bois
         </p>
         <div className="hero-line rounded-pill" />
         <p className="pirata home-sub-hero">Your next developer.</p>

@@ -1,0 +1,21 @@
+.arrow-container {
+  display: flex;
+justify-content: flex-end;
+margin-top: 0.25em;
+margin-left: 0.25em;
+color: #3d3d3d;
+font-size: 2rem;
+}
+.arrow-container:hover {
+    opacity: 0.5;
+    cursor: grab;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-container {
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    font-size: 1rem;
+  } 
+}
+

@@ -48,8 +48,6 @@ a, a:hover, a:visited, a:active {
   height: 100%;
   width: 90%;
   padding-top: 2.5rem;
-
-   /* Add padding to position the content as desired */
 }
 
 .hero-row {
@@ -84,7 +82,7 @@ a, a:hover, a:visited, a:active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 4rem;
   flex-direction: column;
 }
 
@@ -220,7 +218,7 @@ a, a:hover, a:visited, a:active {
 
   .links {
     font-size: 4rem;
-    margin-top: 9rem;
+    margin-top: 6rem;
     flex-direction: row;
   }
   

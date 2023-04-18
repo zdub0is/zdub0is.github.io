@@ -1,10 +1,161 @@
 .about-hero {
-    font-size: 12rem;
-    margin-left: 10rem;
-    margin-top: 3rem;
+  font-size: 12rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
 }
 
 .hook {
-    font-size: 2rem;
-    margin-left: 10rem;
+  font-size: 3rem;
+  margin-left: 10rem;
+  width: 50%;
 }
+
+.about-content {
+  font-family: "Alice", serif;
+  font-size: 1.25rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 45%;
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/star-oval-button.png"); /* Replace with your oval image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(1em + 9rem); /* Adjust the width based on font size */
+  height: calc(1em + 4.25rem); /* Adjust the height based on font size */
+  padding-left: 0; /* Adjust the left padding as desired */
+  padding-right: 0; /* Adjust the right padding as desired */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.link-container:hover {
+  opacity: 0.5;
+}
+
+.contact-hero {
+  text-align: right;
+  font-size: 10rem;
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+
+.contact {
+  font-family: "Alice", serif;
+  font-size: 4rem;
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 45%;
+}
+.contact > p {
+  padding: 0.25rem;
+}
+i {
+  margin-right: 15px;
+}
+.contact > p:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .about-hero {
+    font-size: 8rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+
+  .hook {
+    font-size: 1.5rem;
+    margin-left: 2.75rem;
+    width: 85%;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    margin-left: 2.75rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+  .about-button {
+    width: calc(1em + 9rem); /* Adjust the width based on font size */
+    height: calc(1em + 4.5rem);
+  }
+  .contact-hero {
+    text-align: right;
+    font-size: 5rem;
+    width: 95%;
+    margin: 0;
+  }
+
+  .contact {
+    font-family: "Alice", serif;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    width: 85%;
+  }
+  .contact > p {
+    padding: 0.05rem;
+  }
+
+}
+
+/* @media screen and (max-width: 480px) {
+  .about-hero {
+    font-size: 6rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .hook {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    width: 85%;
+  }
+
+  .about-content {
+    font-size: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+  .about-button {
+    width: calc(1em + 9rem); 
+    height: calc(1em + 4.5rem);
+  }
+  .contact-hero {
+    text-align: right;
+    font-size: 10rem;
+    margin: 1rem auto;
+  }
+
+  
+  .contact {
+    font-family: "Alice", serif;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 85%;
+  }
+  .contact > p {
+    padding: 0.1rem;
+  }
+
+
+    
+} */
